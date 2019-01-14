@@ -1,0 +1,50 @@
+{
+  "name": "monking-cli",
+  "version": "1.0.0",
+  "description": "A toolkit is to generate demo and some files of monking.",
+  "main": "index.js",
+  "bin": {
+    "monking": "bin/monking.js"
+  },
+  "scripts": {
+    "prepare": "rm -rf lib bin && babel es6 --out-dir ./ --presets=minify",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@g.hz.netease.com:22222/chenhebing/monking-cli.git"
+  },
+  "keywords": [
+    "cli",
+    "monking",
+    "monking-cli"
+  ],
+  "author": "chenhebing@corp.netease.com",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/plugin-proposal-decorators": "^7.1.2",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.1.0",
+    "@babel/polyfill": "^7.0.0",
+    "@babel/register": "^7.0.0",
+    "axios": "^0.18.0",
+    "chalk": "^2.4.1",
+    "commander": "^2.16.0",
+    "fs-extra": "^7.0.0",
+    "git-clone": "^0.1.0",
+    "inquirer": "^6.0.0",
+    "ora": "^3.0.0",
+    "rimraf": "^2.6.2",
+    "semver": "^5.5.0",
+    "uid": "^0.0.2"
+  },
+  "engines": {
+    "node": ">= 8.10.0"
+  },
+  "devDependencies": {
+    "babel-preset-minify": "^0.4.3"
+  }
+}
